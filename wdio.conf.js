@@ -12,7 +12,8 @@ export const config = {
                 '--disable-infobars',
                 '--disable-extensions',
                 '--start-maximized',
-                '--disable-blink-features=AutomationControlled'
+                '--disable-blink-features=AutomationControlled',
+                '--headless'
             ]
         }
     }],
