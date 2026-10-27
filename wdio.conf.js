@@ -23,14 +23,7 @@ export const config = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     framework: 'cucumber',
-    reporters: [
-        'spec',
-        ['allure', {
-            outputDir: 'allure-results',
-            disableWebdriverStepsReporting: true,
-            disableWebdriverScreenshotsReporting: false,
-        }]
-    ],
+    reporters: ['spec'],
     cucumberOpts: {
         require: ['./features/step_definitions/**/*.js'],
         backtrace: false,
